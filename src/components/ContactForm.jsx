@@ -18,6 +18,11 @@ export default function ContactForm() {
         <label for="message">Share your thoughts
         <textarea name="message" id="message" placeholder="It would be great if..."></textarea></label>
       </div>
+      <div class="col-12">
+        <ul class="actions">
+          <li><input type="submit" value="Send Message" class="primary" /></li>
+        </ul>
+      </div>
     </form>
 	)
 }
