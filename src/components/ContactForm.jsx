@@ -5,8 +5,8 @@ import "../styles/css/fontawesome-all.min.css";
 
 export default function ContactForm() {
 	return (
-		<form name="contactCLTU" method="post" data-netlify-recaptcha="true" data-netlify="true" className="row gtr-uniform"
-      action="/success"
+		<form name="contactCLTU" method="post" data-netlify="true" className="row gtr-uniform"
+      action="/success/"
     >
       <input type="hidden" name="form-name" value="contactCLTU" />
       <div class="col-6 col-12-xsmall">
