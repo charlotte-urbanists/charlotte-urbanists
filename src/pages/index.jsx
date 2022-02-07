@@ -5,6 +5,7 @@ import { Link } from "gatsby";
 import "../styles/css/main.css";
 import "../styles/css/fontawesome-all.min.css";
 import CuImg from "../images/cuimage.jpeg";
+import TitleBar from "../components/TitleBar";
 
 export default function Home() {
     return (
@@ -12,53 +13,45 @@ export default function Home() {
             <Helmet>
                 <title>Charlotte Urbanists</title>
             </Helmet>
-           
             <main id="main">
-                <header id="header" className="inner"> {/* TODO: fix navbar CSS*/}
-                    <Link to="/" className="logo">Charlotte Urbanists</Link>
-                    <ul className="icons">
-                        <li><a href="twitter.com" className="icon brands fa-twitter"><span className="label">Twitter</span></a></li>
-                        <li><a href="facebook.com" className="icon brands fa-facebook-f"><span className="label">Facebook</span></a></li>
-                        <li><a href="instagram.com" className="icon brands fa-instagram"><span className="label">Instagram</span></a></li>
-                    </ul>
-                </header>
+							<TitleBar />
                     <div className="inner">
-                        <section id="banner">
-                            <div className="content">
-                                <header>
-                                    <h1>We are the Charlotte Urbanists</h1>
-                                    <p>An organization to promote sustainable housing and transportation in Charlotte</p>
-                                </header>
-                                <p>Halp what else goes here</p>
-                                <ul className="actions">
-                                    {/*TODO: provide a valid about more */}
-                                    <li><a href="example.com" className="button big">Learn More</a></li>
-                                </ul>
-                            </div>
-                            <img src={CuImg} alt="An illustration of a public transportation friendly city" />
-                        </section>
-
-                        <section>
-                            <header className="major">
-                                <h2>Projects</h2>
-                            </header>
-                            <div className="features">
-                                {/* TODO: put this article into a separate component */}
-                                <article>
-                                    <span className="icon bench-tree"></span>
-                                    <div className="content">
-                                        <h3>Bus Stop Project</h3>
-                                        <p>We are setting up benches in benchstops</p>
-                                    </div>
-                                </article>
-                            </div>
-                        </section>
-
-                
-           
-
-        </div>
-
+											<section id="banner">
+												<div className="content">
+														<header>
+																<h1>We are the Charlotte Urbanists</h1>
+														</header>
+														<p>Our Mission is to combat destructive suburban norms by advocating for sustainable, sensible, and equitable urban practices and policies.</p>
+														<ul className="actions">
+															<li><Link to="/about" className="button big">Learn More</Link></li>
+														</ul>
+												</div>
+												<img src={CuImg} alt="An illustration of a public transportation friendly city" />
+											</section>
+											<section>
+												<header className="major">
+													<h2>Projects</h2>
+												</header>
+												<div className="features">
+													
+													{/* TODO: put this article into a separate component */}
+													<article>
+														<i className="fas fa-bus icon"></i>
+														<div className="content">
+															<h3>Bus Rider Comfort</h3>
+															<p>The stated goal is to foster and facilitate an environment that is friendly for bus riders. To do this, we have decided that adequate seating at bus stops is the best way of improving comfort at a low cost</p>
+														</div>
+													</article>
+													<article>
+														<i className="fas fa-walking icon"></i>
+														<div className="content">
+															<h3>Reduce Pedestrian Fatalities</h3>
+															<p>The stated goal is to curb Charlotte's status as being one of the worst pedestrian metros in the United States. In order to tackle this, we hope to pacify the top five pedestrian hotspots where pedestrians have been hit and killed. </p>
+														</div>
+													</article>
+												</div>
+											</section>
+        		</div>
           </main>
         </>
       )
