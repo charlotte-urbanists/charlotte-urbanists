@@ -5,7 +5,7 @@ import "../styles/css/fontawesome-all.min.css";
 
 export default function ContactForm() {
 	return (
-		<form name="contactCLTU" method="post" data-netlify="true" className="row gtr-uniform">
+		<form name="contactCLTU" method="post" data-netlify="true" className="row gtr-uniform" action="/success">
       <div class="col-6 col-12-xsmall">
         <label for="name">Name
         <input type="text" name="name" id="name" required /></label>
@@ -20,7 +20,7 @@ export default function ContactForm() {
       </div>
       <div class="col-12">
         <ul class="actions">
-          <li><input type="submit" value="Send Message" class="primary" /></li>
+          <li><button type="submit" class="primary">Submit</button></li>
         </ul>
       </div>
     </form>
