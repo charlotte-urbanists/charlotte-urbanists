@@ -12,7 +12,7 @@ export default function Success() {
         <div id="main">
           <div class="inner">
             <TitleBar />
-            <h3>We will be in touch with you shortly</h3>
+            <h3>Thank you for your message. We will be in touch with you shortly</h3>
             <Link to="/"><button>Go back home</button></Link>
           </div>
         </div>
