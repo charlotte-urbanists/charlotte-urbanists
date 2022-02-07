@@ -8,6 +8,7 @@ export default function ContactForm() {
 		<form name="contactCLTU" method="post" data-netlify-recaptcha="true" data-netlify="true" className="row gtr-uniform"
       action="/success"
     >
+      <input type="hidden" name="form-name" value="contactCLTU" />
       <div class="col-6 col-12-xsmall">
         <label for="name">Name
         <input type="text" name="name" id="name" required /></label>
@@ -23,7 +24,7 @@ export default function ContactForm() {
       <div class="col-12">
         <ul class="actions">
           <div data-netlify-recaptcha="true"></div>
-          <li><button type="submit" name="submit" class="primary">Submit</button></li>
+          <li><button type="submit" class="primary">Submit</button></li>
         </ul>
       </div>
     </form>
