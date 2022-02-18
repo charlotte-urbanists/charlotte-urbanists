@@ -36,7 +36,6 @@ export default function ContactForm() {
       </div>
       <div className="col-12">
         <ul className="actions">
-          <div data-netlify-recaptcha="true" />
           <li><button type="submit" className="primary">Submit</button></li>
         </ul>
       </div>

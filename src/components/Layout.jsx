@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
+import Footer from './Footer';
 import TitleBar from './TitleBar';
 
 // eslint-disable-next-line react/prop-types
@@ -16,6 +17,7 @@ export default function Layout({ children }) {
         <TitleBar />
         <div className="inner">
           {children}
+          <Footer />
         </div>
       </div>
     </>
