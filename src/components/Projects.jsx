@@ -15,7 +15,7 @@ export default function Projects() {
     {
       icon: faWalking,
       title: 'Reduce Pedestrian Fatalities',
-      description: 'The stated goal is to curb Charlotte&apos;s status as being one of the worst pedestrian metros in the United States. In order to tackle this, we aim to pacify the top five pedestrian hotspots where pedestrians have been hit and killed.',
+      description: 'The stated goal is to curb Charlotte\'s status as being one of the worst pedestrian metros in the United States. In order to tackle this, we aim to pacify the top five pedestrian hotspots where pedestrians have been hit and killed.',
     },
   ];
 
