@@ -17,14 +17,17 @@
 			margin-bottom: 0;
 			padding: 0;
 			text-transform: uppercase;
+			display: flex;
+			flex-direction: row;
 
 			a, span {
-				border-bottom: 0;
+				
 				color: inherit;
 				cursor: pointer;
 				display: block;
 				font-size: 0.9em;
-				padding: 0.625em 0;
+				padding: 0.625em;
+				border-bottom-style: none;
 
 				&:hover {
 					color: _palette(accent);
@@ -68,31 +71,34 @@
 
 		> ul {
 			> li {
-				border-top: solid 1px _palette(border);
-				margin: 0.5em 0 0 0;
-				padding: 0.5em 0 0 0;
-
+				border: solid 1px _palette(border);
+				padding: 0.5em;
+				@include breakpoint('<=medium') {
+					flex-grow: 1;
+				}
+				
+				// CSS For nested list
 				> ul {
 					color: _palette(fg-light);
 					display: none;
 					margin: 0.5em 0 1.5em 0;
-					padding-left: 1em;
+					padding: 1em;
 
 					a, span {
 						font-size: 0.8em;
 					}
 
 					> li {
-						margin: 0.125em 0 0 0;
-						padding: 0.125em 0 0 0;
+						margin: 0.125em;
+						padding: 0.125em;
 					}
 				}
 
-				&:first-child {
-					border-top: 0;
-					margin-top: 0;
-					padding-top: 0;
-				}
+				// &:first-child {
+				// 	border-top: 0;
+				// 	margin-top: 0;
+				// 	padding-top: 0;
+				// }
 			}
 		}
 	}
