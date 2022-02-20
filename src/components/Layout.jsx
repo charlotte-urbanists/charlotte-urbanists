@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 
 import Footer from './Footer';
-// import Sidebar from './Sidebar';
 import TitleBar from './TitleBar';
 
 function TopNavBar() {
@@ -12,9 +11,9 @@ function TopNavBar() {
       <div className="inner">
         <nav id="menu">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/support">Support Us</Link></li>
+            <li><Link to="/" activeClassName="active">Home</Link></li>
+            <li><Link to="/about" activeClassName="active">About Us</Link></li>
+            <li><Link to="/support" activeClassName="active">Support Us</Link></li>
           </ul>
         </nav>
       </div>

@@ -30,7 +30,7 @@
 				border-bottom-style: none;
 				text-align: center;
 
-				&:hover {
+				&:hover, &.active {
 					color: _palette(accent);
 				}
 
@@ -61,10 +61,6 @@
 						& + ul {
 							display: block;
 						}
-
-						&:before {
-							@include vendor('transform', 'rotate(-180deg)');
-						}
 					}
 				}
 			}
@@ -74,9 +70,7 @@
 			> li {
 				border: solid 1px _palette(border);
 				padding: 0.5em;
-				@include breakpoint('<=medium') {
-					flex-grow: 1;
-				}
+				flex-grow: 1;
 				
 				// CSS For nested list
 				> ul {
