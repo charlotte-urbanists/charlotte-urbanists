@@ -14,46 +14,46 @@ export default function AboutUs() {
   ];
 
   return (
-    <>
+    <Layout>
       <Helmet>
         <title>About Charlotte Urbanists</title>
+        <meta name="title" property="og:title" content="About Charlotte Urbanists" data-rh="true" />
+        <meta name="description" property="og:description" content="The goals, vision and values of Charlotte Urbanists" data-rh="true" />
       </Helmet>
-      <Layout>
-        <section>
-          <header className="main">
-            <h2>Our Mission</h2>
-          </header>
-          <p>
-            The Charlotte Urbanists Mission is to combat destructive suburban norms by advocating
-            for sustainable, sensible, and equitable urban practices and policies.
-          </p>
-        </section>
-        <section>
-          <header className="main">
-            <h2>Our Vision</h2>
-          </header>
-          <p>
-            The Charlotte Urbanists Vision is for Charlotte to be a thriving city with
-            functioning transit,
-            zero pedestrian fatalities, and affordable housing for all members of the community.
-          </p>
-        </section>
-        <section>
-          <header className="main">
-            <h2>Our Values</h2>
-          </header>
-          <dl>
-            {goals.map(({ title, description }) => (
-              <>
-                <dt>{title}</dt>
-                <dd>{description}</dd>
-              </>
-            ))}
-          </dl>
-        </section>
-        <hr className="major" />
-        <Link to="/" className="button big">Go back home</Link>
-      </Layout>
-    </>
+      <section>
+        <header className="main">
+          <h2>Our Mission</h2>
+        </header>
+        <p>
+          The Charlotte Urbanists Mission is to combat destructive suburban norms by advocating
+          for sustainable, sensible, and equitable urban practices and policies.
+        </p>
+      </section>
+      <section>
+        <header className="main">
+          <h2>Our Vision</h2>
+        </header>
+        <p>
+          The Charlotte Urbanists Vision is for Charlotte to be a thriving city with
+          functioning transit,
+          zero pedestrian fatalities, and affordable housing for all members of the community.
+        </p>
+      </section>
+      <section>
+        <header className="main">
+          <h2>Our Values</h2>
+        </header>
+        <dl>
+          {goals.map(({ title, description }) => (
+            <>
+              <dt>{title}</dt>
+              <dd>{description}</dd>
+            </>
+          ))}
+        </dl>
+      </section>
+      <hr className="major" />
+      <Link to="/" className="button big">Go back home</Link>
+    </Layout>
   );
 }

@@ -27,8 +27,8 @@ export default function Layout({ children }) {
     <>
       <Helmet>
         <title>Charlotte Urbanists</title>
-        <meta property="og:title" content="Charlotte Urbanists" data-rh="true" />
-        <meta property="og:description" content="To advocate for sustainable, sensible, and equitable urban practices and policies" data-rh="true" />
+        <meta name="title" property="og:title" content="Charlotte Urbanists" data-rh="true" />
+        <meta name="description" property="og:description" content="To advocate for sustainable, sensible, and equitable urban practices and policies" data-rh="true" />
       </Helmet>
       <div id="main">
         <TitleBar />

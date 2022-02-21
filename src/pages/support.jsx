@@ -181,43 +181,41 @@ function InstagramFeed() {
 
 export default function SupportUs() {
   return (
-    <>
+    <Layout>
       <Helmet>
+        <title>Support Charlotte Urbanists</title>
+        <meta name="title" property="og:title" content="Support Charlotte Urbanists" data-rh="true" />
+        <meta name="description" property="og:description" content="Ways you can contribute to Charlotte Urbanists" data-rh="true" />
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
         <script async src="//www.instagram.com/embed.js" />
-        <title>Support Charlotte Urbanists</title>
-        <meta property="og:title" content="Support Charlotte Urbanists" data-rh="true" />
-        <meta property="og:description" content="Ways you can contribute to Charlotte Urbanists" data-rh="true" />
       </Helmet>
-      <Layout>
-        <section>
-          <h1>Want to support our misson?</h1>
-          <h2 id="content">Join our meetups</h2>
-          <p>
-            We have weekly meetings every Saturday to discuss and advocate for all things urbanism:
-            safer streets for walking and biking, improved transit, affordable housing, and more!
-          </p>
-          <ul className="actions">
-            <li><a href="https://www.meetup.com/charlotte-urbanists/" target="_blank" rel="noreferrer noopener" className="button big">Visit our meetup.com page</a></li>
-          </ul>
-          <h2 id="content">Donate</h2>
-          <p>Donations will go towards funding our tactical urbanism projects </p>
-          <ul className="actions">
-            <li><a href="https://www.paypal.com/donate/?hosted_button_id=9MCC2AB3TLZYW" target="_blank" rel="noreferrer noopener" className="button big">Donate</a></li>
-          </ul>
-          <h2 id="content">Spread the word on Social Media</h2>
-          <div className="row">
-            <div className="col-6 col-12-small">
-              <h3>Engage with us on Twitter</h3>
-              <a className="twitter-timeline" data-height="326" data-dnt="true" href="https://twitter.com/CLT_Urbanists?ref_src=twsrc%5Etfw">Tweets by CLT_Urbanists</a>
-            </div>
-            <div className="col-6 col-12-small">
-              <h3>Follow us on Instagram</h3>
-              <InstagramFeed />
-            </div>
+      <section>
+        <h1>Want to support our misson?</h1>
+        <h2 id="content">Join our meetups</h2>
+        <p>
+          We have weekly meetings every Saturday to discuss and advocate for all things urbanism:
+          safer streets for walking and biking, improved transit, affordable housing, and more!
+        </p>
+        <ul className="actions">
+          <li><a href="https://www.meetup.com/charlotte-urbanists/" target="_blank" rel="noreferrer noopener" className="button big">Visit our meetup.com page</a></li>
+        </ul>
+        <h2 id="content">Donate</h2>
+        <p>Donations will go towards funding our tactical urbanism projects </p>
+        <ul className="actions">
+          <li><a href="https://www.paypal.com/donate/?hosted_button_id=9MCC2AB3TLZYW" target="_blank" rel="noreferrer noopener" className="button big">Donate</a></li>
+        </ul>
+        <h2 id="content">Spread the word on Social Media</h2>
+        <div className="row">
+          <div className="col-6 col-12-small">
+            <h3>Engage with us on Twitter</h3>
+            <a className="twitter-timeline" data-height="326" data-dnt="true" href="https://twitter.com/CLT_Urbanists?ref_src=twsrc%5Etfw">Tweets by CLT_Urbanists</a>
           </div>
-        </section>
-      </Layout>
-    </>
+          <div className="col-6 col-12-small">
+            <h3>Follow us on Instagram</h3>
+            <InstagramFeed />
+          </div>
+        </div>
+      </section>
+    </Layout>
   );
 }
