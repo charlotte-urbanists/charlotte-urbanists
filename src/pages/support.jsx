@@ -187,7 +187,8 @@ export default function SupportUs() {
         <meta name="title" property="og:title" content="Support Charlotte Urbanists" data-rh="true" />
         <meta name="description" property="og:description" content="Ways you can contribute to Charlotte Urbanists" data-rh="true" />
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
-        <script async src="//www.instagram.com/embed.js" />
+        <script async src="https://www.instagram.com/embed.js" />
+        <script defer src="https://www.gofundme.com/static/js/embed.js" />
       </Helmet>
       <section>
         <h1>Want to support our misson?</h1>
@@ -201,6 +202,7 @@ export default function SupportUs() {
         </ul>
         <h2 id="content">Donate</h2>
         <p>Donations will go towards funding our tactical urbanism projects </p>
+        <div className="gfm-embed" data-url="https://www.gofundme.com/f/benches-for-bus-stops-charlotte-urbanists/widget/large/" />
         <ul className="actions">
           <li><a href="https://gofund.me/b6f0d51e" target="_blank" rel="noreferrer noopener" className="button big">Donate on gofundme</a></li>
         </ul>
