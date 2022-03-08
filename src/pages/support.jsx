@@ -5,6 +5,16 @@ import '../styles/sass/main.scss';
 import Layout from '../components/Layout';
 
 /**
+ * Component to render Facebook feed
+ * @returns {JSX}
+ */
+function FacebookFeed() {
+  return (
+    <div className="fb-page" data-href="https://www.facebook.com/clturbanists" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/clturbanists" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/clturbanists">Charlotte Urbanists</a></blockquote></div>
+  );
+}
+
+/**
  * Component to render instagram feed
  * Holy crap burn this with fire. I'm so sorry.
  * @returns {JSX}
@@ -189,6 +199,8 @@ export default function SupportUs() {
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
         <script async src="https://www.instagram.com/embed.js" />
         <script defer src="https://www.gofundme.com/static/js/embed.js" />
+        <div id="fb-root" />
+        <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0" nonce="cKkctuzc" />
       </Helmet>
       <section>
         <h1>Want to support our misson?</h1>
@@ -202,19 +214,24 @@ export default function SupportUs() {
         </ul>
         <h2 id="content">Donate</h2>
         <p>Donations will go towards funding our tactical urbanism projects </p>
-        <div className="gfm-embed" data-url="https://www.gofundme.com/f/benches-for-bus-stops-charlotte-urbanists/widget/large/" />
-        <ul className="actions">
-          <li><a href="https://gofund.me/b6f0d51e" target="_blank" rel="noreferrer noopener" className="button big">Donate on gofundme</a></li>
-        </ul>
-        <h2 id="content">Spread the word on Social Media</h2>
         <div className="row">
           <div className="col-6 col-12-small">
+            <iframe title="gofundmewidget" height="250" className="gfm-embed" src="https://www.gofundme.com/f/benches-for-bus-stops-charlotte-urbanists/widget/medium/" />
+          </div>
+        </div>
+        <h2 id="content">Spread the word on Social Media</h2>
+        <div className="row">
+          <div className="col-4 col-12-medium">
             <h3>Engage with us on Twitter</h3>
             <a className="twitter-timeline" data-height="326" data-dnt="true" href="https://twitter.com/CLT_Urbanists?ref_src=twsrc%5Etfw">Tweets by CLT_Urbanists</a>
           </div>
-          <div className="col-6 col-12-small">
+          <div className="col-4 col-12-medium">
             <h3>Follow us on Instagram</h3>
             <InstagramFeed />
+          </div>
+          <div className="col-4 col-12-medium">
+            <h3>Like us on Facebook</h3>
+            <FacebookFeed />
           </div>
         </div>
       </section>
