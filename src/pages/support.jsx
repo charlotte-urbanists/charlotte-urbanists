@@ -202,7 +202,7 @@ export default function SupportUs() {
         <h2 id="content">Donate</h2>
         <p>Donations will go towards funding our tactical urbanism projects </p>
         <ul className="actions">
-          <li><a href="https://www.paypal.com/donate/?hosted_button_id=9MCC2AB3TLZYW" target="_blank" rel="noreferrer noopener" className="button big">Donate</a></li>
+          <li><a href="https://gofund.me/b6f0d51e" target="_blank" rel="noreferrer noopener" className="button big">Donate on gofundme</a></li>
         </ul>
         <h2 id="content">Spread the word on Social Media</h2>
         <div className="row">
