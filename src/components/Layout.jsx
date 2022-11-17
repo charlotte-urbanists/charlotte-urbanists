@@ -14,6 +14,7 @@ function TopNavBar() {
             <li><Link to="/" activeClassName="active">Home</Link></li>
             <li><Link to="/about" activeClassName="active">About Us</Link></li>
             <li><Link to="/support" activeClassName="active">Support Us</Link></li>
+            <li><Link to="/bikemap" activeClassName="active">Bike Lane Map</Link></li>
           </ul>
         </nav>
       </div>
