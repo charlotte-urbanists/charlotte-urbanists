@@ -1,8 +1,9 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import { Script } from "gatsby";
 
 import '../styles/sass/main.scss';
 import Layout from '../components/Layout';
+import PageHead from '../components/PageHead';
 
 /**
  * Component to render Facebook feed
@@ -11,6 +12,17 @@ import Layout from '../components/Layout';
 function FacebookFeed() {
   return (
     <div className="fb-page" data-href="https://www.facebook.com/clturbanists" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/clturbanists" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/clturbanists">Charlotte Urbanists</a></blockquote></div>
+  );
+}
+
+export function Head() {
+  const title = 'Support Charlotte Urbanists';
+  const description = 'Ways you can contribute to Charlotte Urbanists';
+  return (
+    <PageHead
+      title={title}
+      description={description}
+    />
   );
 }
 
@@ -192,16 +204,10 @@ function InstagramFeed() {
 export default function SupportUs() {
   return (
     <Layout>
-      <Helmet>
-        <title>Support Charlotte Urbanists</title>
-        <meta name="title" property="og:title" content="Support Charlotte Urbanists" data-rh="true" />
-        <meta name="description" property="og:description" content="Ways you can contribute to Charlotte Urbanists" data-rh="true" />
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
-        <script async src="https://www.instagram.com/embed.js" />
-        <script defer src="https://www.gofundme.com/static/js/embed.js" />
-        <div id="fb-root" />
-        <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0" nonce="cKkctuzc" />
-      </Helmet>
+      <Script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
+      <Script async src="https://www.instagram.com/embed.js" />
+      <Script defer src="https://www.gofundme.com/static/js/embed.js" />
+      <Script async defer crossOrigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v13.0" nonce="cKkctuzc" />
       <section>
         <h1>Want to support our misson?</h1>
         <h2 id="content">Join our meetups</h2>
