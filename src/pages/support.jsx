@@ -1,5 +1,5 @@
 import React from 'react';
-import { Script } from "gatsby";
+import { Script } from 'gatsby';
 
 import '../styles/sass/main.scss';
 import Layout from '../components/Layout';
