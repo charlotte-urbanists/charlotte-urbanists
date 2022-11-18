@@ -1,10 +1,20 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 
 import '../styles/sass/main.scss';
 import Layout from '../components/Layout';
+import PageHead from '../components/PageHead';
 
+export function Head() {
+  const title = 'About Charlotte Urbanists';
+  const description = 'The goals, vision and values of Charlotte Urbanists';
+  return (
+    <PageHead
+      title={title}
+      description={description}
+    />
+  );
+}
 export default function AboutUs() {
   const goals = [
     { title: 'Walkability', description: 'Charlotte Urbanists believe that great cities are cities where people can meet their daily needs via walking or cycling in a safe and pleasant manner.' },
@@ -15,11 +25,6 @@ export default function AboutUs() {
 
   return (
     <Layout>
-      <Helmet>
-        <title>About Charlotte Urbanists</title>
-        <meta name="title" property="og:title" content="About Charlotte Urbanists" data-rh="true" />
-        <meta name="description" property="og:description" content="The goals, vision and values of Charlotte Urbanists" data-rh="true" />
-      </Helmet>
       <section>
         <header className="main">
           <h2>Our Mission</h2>

@@ -6,6 +6,7 @@ import { faBus, faWalking } from '@fortawesome/free-solid-svg-icons';
 
 import '../styles/sass/main.scss';
 import Layout from '../components/Layout';
+import PageHead from '../components/PageHead';
 
 /**
  * Component for rendering contact us form
@@ -86,6 +87,20 @@ function Projects() {
         ))}
       </div>
     </section>
+  );
+}
+
+export function Head() {
+  const title = 'Charlotte Urbanists';
+  const description = 'To advocate for sustainable, sensible, and equitable urban practices and policies';
+  return (
+    <>
+      <PageHead
+        title={title}
+        description={description}
+      />
+      <div id="fb-root" />
+    </>
   );
 }
 

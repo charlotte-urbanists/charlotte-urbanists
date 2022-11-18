@@ -1,7 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
-
 import Footer from './Footer';
 import TitleBar from './TitleBar';
 
@@ -25,20 +23,13 @@ function TopNavBar() {
 // eslint-disable-next-line react/prop-types
 export default function Layout({ children }) {
   return (
-    <>
-      <Helmet>
-        <title>Charlotte Urbanists</title>
-        <meta name="title" property="og:title" content="Charlotte Urbanists" data-rh="true" />
-        <meta name="description" property="og:description" content="To advocate for sustainable, sensible, and equitable urban practices and policies" data-rh="true" />
-      </Helmet>
-      <div id="main">
-        <TitleBar />
-        <TopNavBar />
-        <div className="inner">
-          {children}
-          <Footer />
-        </div>
+    <div id="main">
+      <TitleBar />
+      <TopNavBar />
+      <div className="inner">
+        {children}
+        <Footer />
       </div>
-    </>
+    </div>
   );
 }
