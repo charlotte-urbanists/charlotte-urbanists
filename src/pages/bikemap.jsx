@@ -15,14 +15,16 @@ export function Head() {
     />
   );
 }
+  <iframe title="bike map" src="https://drive.google.com/file/d/10xpTlxhsYfo3tIsjKsARjJC5qmghyFO1/preview" width="100%" height="1000px" allow="autoplay" />;
 
 export default function BikeMap() {
   return (
     <Layout>
       <section>
         <header className="main">
-          {/* TODO: get rid of this hardcoded height */}
-          <iframe title="bike map" src="https://drive.google.com/file/d/10xpTlxhsYfo3tIsjKsARjJC5qmghyFO1/preview" width="100%" height="1000px" allow="autoplay" />
+          <div style={{ display: 'flex', 'flex-direction': 'column' }}>
+            <iframe title="bike map" src="https://drive.google.com/file/d/10xpTlxhsYfo3tIsjKsARjJC5qmghyFO1/preview" width="100%" height="1000px" allow="autoplay" />
+          </div>
         </header>
       </section>
       <hr className="major" />
