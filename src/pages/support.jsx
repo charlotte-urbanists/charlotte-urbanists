@@ -222,7 +222,7 @@ export default function SupportUs() {
         <p>Donations will go towards funding our tactical urbanism projects </p>
         <div className="row">
           <div className="col-6 col-12-small">
-            <iframe title="gofundmewidget" height="250" className="gfm-embed" src="https://www.gofundme.com/f/benches-for-bus-stops-charlotte-urbanists/widget/medium/" />
+            <iframe title="gofundmewidget" height="250" className="gfm-embed" src="https://www.gofundme.com/f/benches-for-bus-stops-20-charlotte-urbanists/widget/medium/" />
           </div>
         </div>
         <h2 id="content">Spread the word on Social Media</h2>
